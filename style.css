@@ -1,0 +1,157 @@
+.cabecalho {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 5%;
+background-color: #0f1a38; /* nova cor do cabeçalho */
+}
+html {
+    scroll-behavior: smooth;
+}
+.calculadora {
+    max-width: 600px;
+    margin: 0 auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo {
+color: #22c55e;
+font-size: 1.6rem;
+font-weight: 700;
+text-decoration: none;
+letter-spacing: 1px;
+}
+body {
+   background-color: #071629;
+ color: white;
+ font-family: Arial, sans-serif;
+}
+
+
+.cabecalho {
+ display: flex;
+justify-content: space-between;
+ align-items: center;
+padding: 20px 5%;
+}
+
+.menu-principal ul {
+display: flex;
+ align-items: center;
+ gap: 20px;
+ list-style: none;
+}
+
+.menu-principal a {
+ color: white;
+text-decoration: none;
+}
+
+.destaque {
+display: flex;
+align-items: center;
+ justify-content: space-between;
+padding: 60px 5%;
+gap: 40px;}
+
+.destaque-conteudo {
+flex: 1;
+}
+
+.foto-inicio {
+ flex: 1;
+}
+
+.foto-inicio img {
+ width: 100%;
+ max-width: 500px;
+ height: 450px;
+ object-fit: cover;
+ border-radius: 15px;
+}
+
+.botao {
+display: inline-block;
+padding: 12px 28px;
+ border-radius: 999px;
+ border: 2px solid #22c55e;
+ background: #22c55e;
+ color: #04121f;
+ font-weight: 600;
+ text-decoration: none;
+ cursor: pointer;
+ transition: transform 0.2s, background 0.2s, color 0.2s;
+}
+.botao:hover {
+ background: #4ade80;
+  border-color: #4ade80;
+ transform: translateY(-2px);
+}
+.botao-contorno {
+ background: transparent;
+border-color: #fff;
+ color: #fff;
+}
+
+.botao-contorno:hover {
+ background: #fff;
+ border-color: #fff;
+ color: #04121f;
+ }
+
+.destaque-botoes {
+ display: flex;
+ gap: 16px;
+ flex-wrap: wrap;
+ margin-top: 24px;
+}
+
+.menu-principal a.botao {
+ color: #04121f;
+ padding: 8px 20px;
+}
+
+
+.card-demeta .botao {
+ display: block;
+ text-align: center;
+ margin-top: 16px;
+}
+
+.como-funciona,
+.metas {
+max-width: 1100px;
+ margin: 0 auto;
+padding: 64px 5%;
+}
+
+.como-funciona h2,
+.metas h2 {
+ font-size: 2rem;
+ text-align: center;
+margin-bottom: 40px;}
+
+.passos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    list-style: none;
+    counter-reset: passo;
+}
+.passo::before {
+    content: counter(passo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+    background: #22c55e;
+    color: #22c55e;
+    font-weight: 700;
+}
+

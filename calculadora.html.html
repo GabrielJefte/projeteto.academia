@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calcule seu IMC e receba uma dieta e um treino sob medida para a sua meta.">
+  <title>MetaFit | Dieta e treino sob medida</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="calculadora">
+  <h1>Calculadora de IMC</h1>
+
+  <form class="formulario" action="#" method="post">
+
+    <div class="campo">
+      <label for="sexo">Sexo</label>
+      <select id="sexo" name="sexo" required>
+        <option value="">Selecione</option>
+        <option value="feminino">Feminino</option>
+        <option value="masculino">Masculino</option>
+      </select>
+    </div>
+
+    <div class="campo">
+      <label for="idade">Idade</label>
+      <input type="number" id="idade" name="idade" min="1" max="120" required>
+    </div>
+
+    <div class="campo">
+      <label for="peso">Peso (kg)</label>
+      <input type="number" id="peso" name="peso" min="20" max="400" step="0.1" required>
+    </div>
+
+    <div class="campo">
+      <label for="altura">Altura (cm)</label>
+      <input type="number" id="altura" name="altura" min="100" max="250" required>
+    </div>
+
+  
+    <div class="campo campo-largo">
+      <label for="atividade">Nível de atividade</label>
+      <select id="atividade" name="atividade" required>
+        <option value="">Selecione</option>
+        <option value="sedentario">Sedentário</option>
+        <option value="leve">Leve (1 a 3 treinos por semana)</option>
+        <option value="moderado">Moderado (3 a 5 treinos por semana)</option>
+        <option value="intenso">Intenso (6 a 7 treinos por semana)</option>
+      </select>
+    </div>
+
+    <div class="campo campo-largo">
+      <label for="meta">Meta</label>
+      <select id="meta" name="meta" required>
+        <option value="">Selecione</option>
+        <option value="emagrecer">Emagrecer</option>
+        <option value="manter">Manter</option>
+        <option value="ganhar">Ganhar peso</option>
+      </select>
+    </div>
+
+    <button type="submit" class="botao campo-largo">Calcular</button>
+  </form>
+</section>
+
+
+
+
+
+<body>
+    
+</body>
+</html>
